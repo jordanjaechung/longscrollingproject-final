@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: white;
+}
+
+p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0;
+}
+
+.animationfontmargin {
+  margin-top: 30px;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h6 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  text-align: center;
+}
+
+h6:hover {
+  background-color: red;
+}
+
+footer {
+  outline: 1px solid black;
+  font-family: 'Press Start 2P', cursive;
+  font-size: .5rem;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+nav ul li {
+  font-family: 'Press Start 2P', cursive;
+  position: static;
+  text-align: center;
+  list-style-type: none;
+  width: 25%;
+  margin-bottom: 20px;
+  padding: auto;
+  overflow: hidden;
+  color: rgb(0,0,0);
+}
+
+nav ul li:hover {
+  background-color: rgb(186,186,186);
+  color: black;
+  list-style-type: none;
+  width: 25%;
+  margin-bottom: 20px;
+  padding: auto;
+}
+
+.elbodyfontospaceo {
+  text-align: center;
+}
+
+.elbodyfontospaceo2 {
+  text-align: right;
+}
+
+.doggo {
+  width: 476px;
+  height: 240px;
+  text-align: center;
+  background: url('../img/doggo.png') left center;
+  animation: play .4s steps(4) infinite;
+}
+
+@keyframes play {
+    100% { background-position: -1900px; }
+}
+
+.elboxo {
+    margin: 4em 1em;
+    width: 200px;
+    height: 60px;
+    border: 2px solid black;
+    line-height: 50px;
+    text-align: center;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+.elboxo.slideright:hover {
+    -webkit-transform: translate(100em,0);
+    -moz-transform: translate(100em,0);
+    -o-transform: translate(100em,0);
+    -ms-transform: translate(100em,0);
+    transform: translate(100em,0);
+  }
+
+div.doggo2 {
+    text-align: center;
+    position: static;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+div.doggo2 div {
+    width: 500px;
+    height: 500px;
+    background: url('../img/doggo2.png') no-repeat;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  /* hover final */
+#doggo2:hover div.doggo2 {
+    -webkit-transform: translate(2000px,-200px);
+    -moz-transform: translate(2000px,-200px);
+    -o-transform: translate(2000px,-200px);
+    -ms-transform: translate(2000px,-200px);
+    transform: translate(2000px,-200px);
+  }
+#doggo2:hover div.doggo2 div {
+    -webkit-transform: rotate(700deg);
+    -moz-transform: rotate(700deg);
+    -o-transform: rotate(700deg);
+    -ms-transform: rotate(700deg);
+    transform: rotate(700deg);
+}
+
+.movemove {
+  animation: drive 5s steps(200, end) infinite;
+}
+
+@keyframes drive {
+  to {
+    transform: translateX(-900px);
+    position: relative;
+  }
+}
+
+.spinspinspinspin {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
